@@ -2,6 +2,7 @@
   --color-red: #8b2624;
   --color-smoke-white: #d7d3c3;
   --color-black-grey: #313131;
+  --color-transperend-red: rgba(139, 38, 36, 0.6);
 }
 
 body {
@@ -86,11 +87,18 @@ p {
   border-radius: 50%;
 }
 
-.section-main,
-.section-project {
+.section-main {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section-project {
+  background-color: var(--color-transperend-red);
+}
+
+.prj-img {
+  width: 30%;
 }
