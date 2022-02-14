@@ -7,50 +7,65 @@
     <title>Personal Portfolio</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Open+Sans+Condensed:wght@300&family=Saira+Condensed:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
+    <!-- Start of navigation -->
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
         <li><a href="#main">About</a></li>
         <li><a href="#projects">My work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="container">
-      <main id="main" class="section-main">
-        <div class="main-container">
-          <img src="images/my-pic.jpg" alt="autor picture" class="my-pic" />
-          <div class="main-section">
-            <h1>NAZIM BAYRAKTAR</h1>
-            <h3>a WEB DEVELOPER</h3>
-          </div>
+
+    <!-- Start of main-welcome section -->
+    <main id="main" class="main-sect">
+      <div class="main-flex">
+        <img src="images/my-pic.jpg" alt="autor picture" class="my-pic" />
+        <div class="main-section">
+          <h1>NAZIM BAYRAKTAR</h1>
+          <h4>a WEB DEVELOPER</h4>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id
-          esse molestiae qui ex! Nisi accusamus ipsam eos eveniet in, inventore
-          consequatur quod vero rerum cum necessitatibus tenetur a nesciunt
-          commodi unde rem, quam eligendi aliquid numquam fugit. Officia
-          molestias beatae veritatis pariatur. Consequuntur natus fuga,
-          voluptates quidem aspernatur voluptatibus?
-        </p>
-      </main>
-    </div>
-    <section id="projects" class="section-project">
-      <h2>Hava a Look some of my projects</h2>
-      <div class="container project-container">
-        <img class="prj-img" src="images/blackjack.png" alt="" />
-        <img class="prj-img" src="images/chrome-ext.png" alt="" />
-        <img class="prj-img" src="images/pass-counter.png" alt="" />
       </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id
+        esse molestiae qui ex! Nisi accusamus ipsam eos eveniet in, inventore
+        consequatur quod vero rerum cum necessitatibus tenetur a nesciunt
+        commodi unde rem, quam eligendi aliquid numquam fugit. Officia molestias
+        beatae veritatis pariatur. Consequuntur natus fuga, voluptates quidem
+        aspernatur voluptatibus?
+      </p>
+    </main>
+
+    <!-- Start of project section -->
+    <section id="projects" class="main-sect proj-sect">
+      <h2 class="proj-sect-header">Some of my projects</h2>
+      <!-- <div class="container proj-grid">
+        <a href="#">
+          <img src="images/blackjack.png" alt="" class="proj-img" />
+          <p class="proj-title"></p>
+        </a>
+        <a href="#">
+          <img src="images/chrome-ext.png" alt="" class="proj-img" />
+          <p class="proj-title"></p>
+        </a>
+        <a href="#">
+          <img src="images/pass-counter.png" alt="" class="proj-img" />
+          <p class="proj-title"></p>
+        </a>
+      </div> -->
     </section>
+
+    <!-- Start of contact section -->
     <section id="contact" class="section-contact">
       <h4>GET IN TOUCH</h4>
     </section>
+
     <footer>All rights reserved 2022</footer>
     <script src="script.js"></script>
   </body>
