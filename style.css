@@ -10,47 +10,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--color-black-grey);
   letter-spacing: 0.1em;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-li {
-  list-style: none;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-smoke-white);
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--color-smoke-white);
-}
-
-h1,
-h4,
-p {
-  color: var(--color-smoke-white);
-}
-
-h1 {
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.3rem;
-  font-weight: 300;
-  font-size: 3.5rem;
-}
-
-h4 {
-  margin-top: 0;
-  letter-spacing: 1rem;
-  color: var(--color-red);
-  font-weight: 300;
-}
-
-.nav {
+nav {
   background-color: var(--color-red);
   width: 100%;
   position: fixed;
@@ -59,32 +24,62 @@ h4 {
   z-index: 10;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 
-.nav-list {
-  display: flex;
-  gap: 2.5rem;
-  margin-right: 2rem;
+li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 2rem;
 }
 
-.main-sect {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  height: 100vh;
-  border: 1px solid #fff;
+a {
+  text-decoration: none;
+  color: var(--color-smoke-white);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: var(--color-smoke-white);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.container {
+  width: 50%;
   margin: 0 auto;
+  /* border: 1px solid #8b2624; */
+  padding: 25rem 0;
 }
 
-.main-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.inverse {
+  margin-top: 8.4rem;
+  color: var(--color-smoke-white);
+  background: var(--color-black-grey);
+}
 
-  /* margin: 7.5rem auto; */
+.projects {
+  margin-top: 0;
+}
+
+.about-me {
+  background-color: var(--color-smoke-white);
+  color: var(--color-black-grey);
 }
 
 .my-pic {
@@ -93,7 +88,26 @@ h4 {
   border-radius: 50%;
 }
 
-.proj-sect {
-  width: 100%;
-  background-color: var(--color-smoke-white);
+.accent-text {
+  display: block;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--color-red);
+}
+
+.btn {
+  padding: 0.2rem 3rem 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  border-radius: 3rem;
+  background-color: var(--color-black-grey);
+}
+
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+  color: var(--color-black-grey);
+  background-color: rgba(49, 49, 49, 0.1);
+  border: 1px solid var(--color-black-grey);
+  transition: 0.3s ease-in;
 }
